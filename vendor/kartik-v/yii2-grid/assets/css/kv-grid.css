@@ -2,13 +2,17 @@
  * @package   yii2-grid
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   3.0.4
+ * @version   3.0.8
  *
  * Gridview widget styling and enhancements for Bootstrap.
  * Built for Yii Framework 2.0
  * Author: Kartik Visweswaran
  * Year: 2015
  * For more Yii related demos visit http://demos.krajee.com
+ */
+ 
+/**
+ * Panel Styles
  */
 .kv-panel-pager {
     min-height: 34px;
@@ -95,7 +99,7 @@
     background: #ffffff url('../img/loading.gif') center center no-repeat !important;
 }
 
-.kv-grid-loading * {
+.kv-grid-loading tr, .kv-grid-loading td {
     background: transparent !important;
 }
 
@@ -266,10 +270,9 @@
     border-radius: 3px;
 }
 
-.kv-clear-radio {
-    float:none;
-}
-
+/**
+ * Responsive table wrapping
+ */
 @media screen and (max-width: 480px) {
     .kv-table-wrap th, .kv-table-wrap td {
 		display: block;
@@ -282,4 +285,50 @@
         margin-top: 10px;
         font-size: 2em;
     }
+}
+
+/**
+ * RadioColumn styles
+ */
+.kv-clear-radio {
+    float:none;
+}
+
+/**
+ * Grid Grouping Styles
+ */
+td.kv-group-even {
+    background-color: #f0f1ff!important;
+}
+
+.table-hover td.kv-group-even:hover {
+    background-color: #d7d9ff!important;
+}
+
+td.kv-group-odd {
+    background-color: #f9fcff!important;
+}
+
+.table-hover td.kv-group-odd:hover {
+    background-color: #d7ecff!important;
+}
+
+.kv-grouped-row {
+    background-color: #FFF0F5!important;
+    font-size: 1.3em;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+.table-hover .kv-grouped-row:hover {
+    background-color: #FFE4E1!important;
+}
+
+/**
+ * Grid styles for floating header and perfect scrollbar
+ */
+.kv-grid-wrapper {
+    position: relative;
+    overflow: auto;
+    height: 300px;
 }

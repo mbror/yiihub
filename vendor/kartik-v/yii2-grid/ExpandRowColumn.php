@@ -4,22 +4,21 @@
  * @package   yii2-grid
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
- * @version   3.0.4
+ * @version   3.0.8
  */
 
 namespace kartik\grid;
 
 use Yii;
+use Closure;
 use yii\base\InvalidConfigException;
-use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\JsExpression;
 use yii\web\View;
 
 /**
- * An ExpandRowColumn can be used to expand a row and add content in a new
- * row below it either directly or via ajax.
+ * An ExpandRowColumn can be used to expand a row and add content in a new row below it either directly or via ajax.
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
@@ -45,8 +44,8 @@ class ExpandRowColumn extends DataColumn
     public $value = GridView::ROW_NONE;
 
     /**
-     * @var boolean whether to toggle the expansion/collapse by clicking on the table row. To disable row 
-     * click for specific elements within the row you can add the CSS class `kv-disable-click` to tags/elements  
+     * @var boolean whether to toggle the expansion/collapse by clicking on the table row. To disable row
+     * click for specific elements within the row you can add the CSS class `kv-disable-click` to tags/elements
      * to disable the toggle functionality.
      */
     public $enableRowClick = false;
@@ -54,13 +53,13 @@ class ExpandRowColumn extends DataColumn
     /**
      * @var array list of tags in the row on which row click will be disabled.
      */
-    public $rowClickExcludedTags = ['a', 'button', 'input'];    
+    public $rowClickExcludedTags = ['a', 'button', 'input'];
 
     /**
      * @var array additional data that will be passed to the ajax load function as key value pairs
      */
     public $extraData = [];
-    
+
     /**
      * @var string icon for the expand indicator. If this is not set, it will derive values automatically
      * using the following rules:
@@ -105,9 +104,15 @@ class ExpandRowColumn extends DataColumn
      * - GridView::ROW_EXPANDED : Will set all rows to expanded and display the `collapseIcon`
      */
     public $defaultHeaderState = GridView::ROW_COLLAPSED;
-    
+
     /**
-     * @var boolean whether to allow only one row to be expanded at a time and auto collapse other 
+     * @var boolean whether to enable caching of expanded row content while expanding the row
+     * using ajax triggered action (applicable when `detailUrl` is set). Defaults to `true`.
+     */
+    public $enableCache = true;
+
+    /**
+     * @var boolean whether to allow only one row to be expanded at a time and auto collapse other
      * expanded rows whenever a row is expanded. Defaults to `false`.
      */
     public $expandOneOnly = false;
@@ -270,7 +275,8 @@ class ExpandRowColumn extends DataColumn
                 'animationDuration' => $this->detailAnimationDuration,
                 'expandOneOnly' => $this->expandOneOnly,
                 'enableRowClick' => $this->enableRowClick,
-                'rowClickExcludedTags' => array_map('strtoupper',$this->rowClickExcludedTags),
+                'enableCache' => $this->enableCache,
+                'rowClickExcludedTags' => array_map('strtoupper', $this->rowClickExcludedTags),
                 'collapseAll' => false,
                 'expandAll' => false,
                 'extraData' => $this->extraData
@@ -301,6 +307,7 @@ class ExpandRowColumn extends DataColumn
         if ($type === 'collapse') {
             return $bs ? GridView::ICON_COLLAPSE : '-';
         }
+        return null;
     }
 
     /**
@@ -322,6 +329,7 @@ class ExpandRowColumn extends DataColumn
     public function getDataCellValue($model, $key, $index)
     {
         $value = parent::getDataCellValue($model, $key, $index);
+        /** @noinspection PhpUnusedLocalVariableInspection */
         $icon = '';
         if ($value === GridView::ROW_EXPANDED) {
             $type = 'collapsed';
@@ -337,15 +345,15 @@ class ExpandRowColumn extends DataColumn
         $disabled = static::parseData($this->disabled, $model, $key, $index, $this) ? ' kv-state-disabled' : '';
         if ($this->hiddenFromExport) {
             Html::addCssClass($detailOptions, 'skip-export');
-        }        
+        }
         $detailOptions['data-index'] = $index;
-        $detailOptions['data-key'] = $key;
+        $detailOptions['data-key'] = is_object($key) || is_array($key) ? serialize($key) : $key;
         Html::addCssClass($detailOptions, 'kv-expanded-row');
         $content = Html::tag('div', $detail, $detailOptions);
         return <<< HTML
         <div class="kv-expand-row{$disabled}">
             <div class="kv-expand-icon kv-state-{$type}{$disabled}">{$icon}</div>
-            <div class="kv-expand-detail skip-export" style='display:none;'>
+            <div class="kv-expand-detail skip-export" style="display:none;">
                 {$content}
             </div>
         </div>
@@ -355,6 +363,7 @@ HTML;
     /**
      * Parses data for Closure and returns accordingly
      *
+     * @param mixed           $data the data to parse
      * @param mixed           $model is the data model
      * @param mixed           $key is the key associated with the data model
      * @param integer         $index is the zero-based index of the data model among the models array returned by
@@ -404,7 +413,6 @@ HTML;
         }
         $icon = $this->expandIcon;
         $css = 'kv-expand-header-icon kv-state-collapsed';
-        $view = $this->grid->getView();
         if ($this->defaultHeaderState === GridView::ROW_EXPANDED) {
             $icon = $this->collapseIcon;
             $css = 'kv-expand-header-icon kv-state-expanded';

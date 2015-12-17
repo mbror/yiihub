@@ -1,12 +1,62 @@
-Version 3.0.4
-=============
+Change Log: `yii2-grid`
+=======================
+
+## Version 3.0.8
+
+**Date:** 05-Dec-2015
+
+1. (enh #303): Correct Safari specific limitation for jQuery slideDown animation in ExpandRowColumn.
+2. (enh #347): New `defaultPagination` property to allow setting default to 'page' or 'all'.
+3. (bug #370): Enhance `EditableColumn::refreshGrid` validation.
+4. (bug #371): Allow `tag` to be set for rendering `beforeHeader`.
+5. (enh #380): Allow toolbar and panel classes/layouts to be overridden.
+6. (bug #387): Rename Czech translation message folder from `cz` to `cs`.
+7. (enh #389): Various enhancements to table float header.
+8. (enh #390): Perfect scroll bars plugin enhancement.
+9. Various coding style enhancements, optimizations, and fixes. 
+10. (enh #391): Toggle data enhancement with confirmation dialog for show all and hide maxCount. 
+11. Regenerate and update message translations.
+12. (enh #397): Updated Dutch Translations.
+13. (enh #399): Correct resizableColumns initialization for PJAX.
+14. (enh #410): Updated Czech Translations.
+15. Update to release v1.3.2 of the `mkoryak/floatThead` plugin.
+
+## Version 3.0.7
+
+**Date:** 13-Sep-2015
+
+1. (enh #336): Add `enableCache` property in `ExpandRowColumn`.
+2. (enh #352): Display expanded ajax content in ExpandRowColumn when initial value = ROW_EXPANDED.
+3. (enh #354): Add options to set resizableColumns plugin options.
+4. Better styling for revamped Select2 widget.
+5. (enh #365): Validate disabled checkbox rows for highlight in CheckboxColumn.
+
+## Version 3.0.6
+
+**Date:** 15-Jul-2015
+
+1. (enh #338): Various enhancements for grid excel export formatting.
+
+## Version 3.0.5
+
+**Date:** 07-Jul-2015
+
+1. (enh #322): Send serialized `data-key` when ExpandRowColumn has a composite key.
+2. (enh #323): Prevent `pjax:complete` init script being called multiple times.
+3. (enh #325): Various enhancements to client script registrations.
+4. (enh #326): Zero width joiner for excel exports.
+5. (enh #328): Add Turkish translations.
+6. (enh #334): Add grid grouping functionalities.
+
+## Version 3.0.4
+
 **Date:** 24-Jun-2015
 
 1. (enh #320): Trim trailing whitespaces from text/csv exports.
 2. (enh #321): Add Indonesian translations.
 
-Version 3.0.3
-=============
+## Version 3.0.3
+
 **Date:** 15-Jun-2015
 
 1. (enh #300): Add Lithuanian Translations.
@@ -17,8 +67,8 @@ Version 3.0.3
 6. (enh #317): Add missing spanish translations.
 7. (enh #318): Fix post pjax `setTimeout` JS function.
 
-Version 3.0.2
-=============
+## Version 3.0.2
+
 **Date:** 11-May-2015
 
 1. (enh #261): Allow initialization of ExpandRowColumn cells even if they are hidden.
@@ -33,8 +83,8 @@ Version 3.0.2
 10. (enh #291): ExpandRowColumn styling enhancements.
 11. (enh #296): Responsively wrap table columns for smaller screen devices.
 
-Version 3.0.1
-=============
+## Version 3.0.1
+
 **Date:** 14-Mar-2015
 
 1. (enh #176): Allow displayValue to be overridden for editable column.
@@ -53,8 +103,8 @@ Version 3.0.1
 14. (enh #256): New property `extraData` for sending extra data to ExpandRowColumn via ajax load call.
 15. (enh #257): Fix for `detailOptions` to be set as Closure in ExpandRowColumn.
 
-Version 3.0.0
-=============
+## Version 3.0.0
+
 **Date:** 13-Feb-2015
 
 1. (bug #178): Enhance CheckboxColumn to allow contentOptions to be set as Closure.
@@ -86,23 +136,23 @@ Version 3.0.0
 27. (enh #227): New grid column extension RadioColumn.
 28. Set copyright year to current.
 
-Version 2.9.0
-=============
+## Version 2.9.0
+
 **Date:** 26-Dec-2014
 
 1. (bug #172): Ability to configure export form submission target.
 2. (bug #173): Ability to configure display of confirmation alert dialog before export.
 
-Version 2.8.0
-=============
+## Version 2.8.0
+
 **Date:** 16-Dec-2014
 
 1. (bug #167): Fix Yii message parsing for Html5Input '$this->noSupport'.
 2. (enh #168): Prevent user to rapidly toggle and break the expand row before expansion or collapse.
 3. (enh #169): Enable itemsBefore and itemsAfter to be added for export dropdown menu.
 
-Version 2.7.0
-=============
+## Version 2.7.0
+
 **Date:** 02-Dec-2014
 
 1. (enh #150): New `ExpandRowColumn` added - allows to expand grid rows, show details, and load content via ajax.
@@ -112,8 +162,8 @@ Version 2.7.0
 5. (enh #157): Recursively replace/merge PDF export configuration correctly.
 6. (enh #158): Include demo messages for auto generating via config.
 
-Version 2.6.0
-=============
+## Version 2.6.0
+
 **Date:** 19-Nov-2014
 
 1. (enh #139): German translations updated.
@@ -145,22 +195,22 @@ Version 2.6.0
 3. HTML attributes for each of the above containers are now configurable i.e via `headingOptions`, `footerOptions`, `beforeOptions`, and `afterOptions` properties in the `panel` array configuration.
 4. Vast enhancements to CSS styling when using Float Table Header wrapper. This now ensures tables auto fits and expand rightly to fit inside the panel.
 
-Version 2.5.0
-=============
+## Version 2.5.0
+
 **Date:** 17-Nov-2014
 
 1. (bug #135): Upgrade to latest release of floatTHeader plugin.
 2. (bug #136): Fix IE specific errors in floatHeader when columns are hidden.
 
-Version 2.4.0
-=============
+## Version 2.4.0
+
 **Date:** 14-Nov-2014
 
 1. (bug #132): Correct page summary calculation.
 2. (bug #133): Skip mPDF dependency when export is set to false.
 
-Version 2.3.0
-=============
+## Version 2.3.0
+
 **Date:** 07-Nov-2014
 
 1. (bug #87): Fix key as object in mongodb.
@@ -171,8 +221,8 @@ Version 2.3.0
 6. (bug #131): Fix missing `options` in `toggleDataOptions` initialization.
 7. First stable release
 
-Version 2.2.0
-=============
+## Version 2.2.0
+
 **Date:** 04-Nov-2014
 
 1. (enh #110): Various export functionality enhancements):
@@ -194,8 +244,8 @@ Version 2.2.0
 7. (enh #121): Portugese translations.
 8. (enh #122): Hungarian translations.
 
-Version 2.1.0
-=============
+## Version 2.1.0
+
 **Date:** 25-Oct-2014
 
 1. (enh #94): Enhance and revamp toolbar.
@@ -206,8 +256,8 @@ Version 2.1.0
 6. (enh #107): Cleanup and refactor GridView class code for better extensibility.
 7. (enh #111): Fix export button dropdown menu display for IE.
 
-Version 2.0.0
-=============
+## Version 2.0.0
+
 **Date:** 14-Sep-2014
 
 1. (enh #80): Add hidden property for columns to be hidden from display but available on export.
@@ -218,8 +268,8 @@ Version 2.0.0
 6. PSR 4 alias change
 7. (bug #92): Bug fix for generating multiple rows in header/footer.
 
-Version 1.9.0
-=============
+## Version 1.9.0
+
 **Date:** 21-Aug-2014
 
 1. (enh #65): Various enhancements to the widget to work with Pjax 
@@ -229,24 +279,24 @@ Version 1.9.0
 5. (enh #74,76): Enhance EditableColumn to allow grid refresh on successful update.
 
 
-Version 1.8.0
-=============
+## Version 1.8.0
+
 
 **Date:** 01-Aug-2014
 
 1. (enh #58, #59): Russian language translation included
 2. (enh #60): Added a new `EditableColumn` column to the grid that uses the enhanced `kartik\editable\Editable` widget to make the grid content editable.
 
-Version 1.7.0
-=============
+## Version 1.7.0
+
 
 **Date:** 14-Jul-2014
 
 1. (enh #57): Added `containerOptions` to grid layout for allowing configuration of the grid table container. This can be set to
 `false` to not display the container.
 
-Version 1.6.0
-=============
+## Version 1.6.0
+
 
 **Date:** 10-Jul-2014
 
@@ -268,8 +318,8 @@ Version 1.6.0
 
 5. `ActionColumn` content by default has been disabled to appear in export output. The `skip-export` CSS class has been set as default in `headerOptions` and `contentOptions`.
 
-Version 1.5.0
-=============
+## Version 1.5.0
+
 
 **Date:** 04-Jul-2014
 
@@ -281,8 +331,8 @@ Version 1.5.0
     - Added `afterFooter` property to configure additional footer rows after the default grid footer. 
 2. Fixes #26 to #50.
 
-Version 1.4.0
-=============
+## Version 1.4.0
+
 
 **Date:** 29-Apr-2014
 
@@ -291,8 +341,8 @@ Version 1.4.0
     - Added `rowSelectedClass` property to configure the CSS class for the highlighted row.
 2. Fixes #20 to #24.
 
-Version 1.3.0
-=============
+## Version 1.3.0
+
 
 **Date:** 18-Apr-2014
 
@@ -302,8 +352,8 @@ Version 1.3.0
     - Revamp export form to be submitted in a new window (in a non-intrusive manner)
 2. Fixes #1 to #19.
 
-Version 1.2.0
-=============
+## Version 1.2.0
+
 
 **Date:** 22-Mar-2014
 
@@ -314,8 +364,8 @@ Version 1.2.0
    - Save displayed grid as TEXT
    - Save displayed grid as XLS
 
-Version 1.1.0
-=============
+## Version 1.1.0
+
 
 **Date:** 15-Mar-2014
 
@@ -325,8 +375,8 @@ Version 1.1.0
 2. Templates to modify positioning of the export menu and the panel before and after contents
 3. Ability to display toolbar in the header.
 
-Version 1.0.0
-=============
+## Version 1.0.0
+
 
 **Date:** 10-Mar-2014
 

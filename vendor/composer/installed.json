@@ -96,17 +96,17 @@
     },
     {
         "name": "bower-asset/yii2-pjax",
-        "version": "v2.0.4",
-        "version_normalized": "2.0.4.0",
+        "version": "v2.0.5",
+        "version_normalized": "2.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/jquery-pjax.git",
-            "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+            "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-            "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+            "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/6818718408086db6bdcf33649cecb86b6b4f9b67",
+            "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67",
             "shasum": ""
         },
         "require": {
@@ -323,17 +323,17 @@
     },
     {
         "name": "yiisoft/yii2",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
+        "version": "2.0.6",
+        "version_normalized": "2.0.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "726867caee3f23aa7a6975c801e64b6021e14f86"
+            "reference": "f42b2eb80f61992438661b01d0d74c6738e2ff38"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/726867caee3f23aa7a6975c801e64b6021e14f86",
-            "reference": "726867caee3f23aa7a6975c801e64b6021e14f86",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f42b2eb80f61992438661b01d0d74c6738e2ff38",
+            "reference": "f42b2eb80f61992438661b01d0d74c6738e2ff38",
             "shasum": ""
         },
         "require": {
@@ -348,7 +348,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "*"
         },
-        "time": "2015-05-10 20:09:47",
+        "time": "2015-08-05 22:00:30",
         "bin": [
             "yii"
         ],
@@ -413,24 +413,24 @@
     },
     {
         "name": "yiisoft/yii2-authclient",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-authclient.git",
-            "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b"
+            "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
-            "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
+            "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
+            "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
             "shasum": ""
         },
         "require": {
             "ext-curl": "*",
             "yiisoft/yii2": ">=2.0.4"
         },
-        "time": "2015-05-10 22:07:56",
+        "time": "2015-09-23 17:26:02",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -468,19 +468,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/xjflyttp/yii2-oauth.git",
-            "reference": "5fb6e6f8bc7db990425b23f6c451e57ef765ccd8"
+            "reference": "7490ffbc4acbd242ae7ceb560ef75cd22c3bb4e7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/xjflyttp/yii2-oauth/zipball/5fb6e6f8bc7db990425b23f6c451e57ef765ccd8",
-            "reference": "5fb6e6f8bc7db990425b23f6c451e57ef765ccd8",
+            "url": "https://api.github.com/repos/xjflyttp/yii2-oauth/zipball/7490ffbc4acbd242ae7ceb560ef75cd22c3bb4e7",
+            "reference": "7490ffbc4acbd242ae7ceb560ef75cd22c3bb4e7",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": "*",
             "yiisoft/yii2-authclient": "*"
         },
-        "time": "2015-04-21 07:07:18",
+        "time": "2015-10-07 06:17:45",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -608,25 +608,76 @@
         ]
     },
     {
-        "name": "yiisoft/yii2-bootstrap",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
+        "name": "bower-asset/bootstrap",
+        "version": "v3.3.5",
+        "version_normalized": "3.3.5.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-            "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0"
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
-            "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+            "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.9.1"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "less/bootstrap.less",
+                "dist/js/bootstrap.js"
+            ],
+            "bower-asset-ignore": [
+                "/.*",
+                "_config.yml",
+                "CNAME",
+                "composer.json",
+                "CONTRIBUTING.md",
+                "docs",
+                "js/tests",
+                "test-infra"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+        "keywords": [
+            "css",
+            "framework",
+            "front-end",
+            "js",
+            "less",
+            "mobile-first",
+            "responsive",
+            "web"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-bootstrap",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+            "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+            "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
             "shasum": ""
         },
         "require": {
             "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-            "yiisoft/yii2": ">=2.0.4"
+            "yiisoft/yii2": ">=2.0.6"
         },
-        "time": "2015-05-10 22:08:17",
+        "time": "2015-09-23 17:48:24",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -656,6 +707,104 @@
         "description": "The Twitter Bootstrap extension for the Yii framework",
         "keywords": [
             "bootstrap",
+            "yii2"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-krajee-base",
+        "version": "v1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+            "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/602e7203680642ac4a2a5f9355316eaa9939b6ff",
+            "reference": "602e7203680642ac4a2a5f9355316eaa9939b6ff",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2-bootstrap": "@dev"
+        },
+        "time": "2015-12-11 19:01:49",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\base\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+        "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+        "keywords": [
+            "base",
+            "extension",
+            "foundation",
+            "krajee",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-widget-select2",
+        "version": "v2.0.3",
+        "version_normalized": "2.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-widget-select2.git",
+            "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/e72880e7e8dfc845c112ed7df275bf1c929be6db",
+            "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-krajee-base": "~1.7"
+        },
+        "time": "2015-09-12 19:56:48",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\select2\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Enhanced Yii2 wrapper for the Select2 jQuery plugin (sub repo split from yii2-widgets).",
+        "homepage": "https://github.com/kartik-v/yii2-widget-select2",
+        "keywords": [
+            "dropdown",
+            "extension",
+            "form",
+            "jquery",
+            "plugin",
+            "select2",
+            "widget",
             "yii2"
         ]
     },
@@ -765,24 +914,24 @@
     },
     {
         "name": "bower-asset/fontawesome",
-        "version": "v4.3.0",
-        "version_normalized": "4.3.0.0",
+        "version": "v4.5.0",
+        "version_normalized": "4.5.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/FortAwesome/Font-Awesome.git",
-            "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+            "reference": "fddd2c240452e6c8990c4ef75e0265b455aa7968"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
-            "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/fddd2c240452e6c8990c4ef75e0265b455aa7968",
+            "reference": "fddd2c240452e6c8990c4ef75e0265b455aa7968",
             "shasum": ""
         },
         "type": "bower-asset-library",
         "extra": {
             "bower-asset-main": [
-                "./css/font-awesome.css",
-                "./fonts/*"
+                "less/font-awesome.less",
+                "scss/font-awesome.scss"
             ],
             "bower-asset-ignore": [
                 "*/.*",
@@ -803,21 +952,75 @@
         "description": "Font Awesome"
     },
     {
-        "name": "almasaeed2010/adminlte",
-        "version": "v2.1.2",
-        "version_normalized": "2.1.2.0",
+        "name": "rmrevin/yii2-fontawesome",
+        "version": "2.13.0",
+        "version_normalized": "2.13.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/almasaeed2010/AdminLTE.git",
-            "reference": "406de4e708e84ed0abbc08b09870828254a6b2ef"
+            "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+            "reference": "2efbfacb22be59f373d11a7e3dfa9213e2ba18a9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/406de4e708e84ed0abbc08b09870828254a6b2ef",
-            "reference": "406de4e708e84ed0abbc08b09870828254a6b2ef",
+            "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/2efbfacb22be59f373d11a7e3dfa9213e2ba18a9",
+            "reference": "2efbfacb22be59f373d11a7e3dfa9213e2ba18a9",
             "shasum": ""
         },
-        "time": "2015-06-08 22:41:48",
+        "require": {
+            "bower-asset/fontawesome": "4.5.*",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "2.0.*"
+        },
+        "time": "2015-11-26 15:24:53",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "rmrevin\\yii\\fontawesome\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Revin Roman",
+                "email": "roman@rmrevin.com",
+                "homepage": "https://rmrevin.com/"
+            }
+        ],
+        "description": "Asset Bundle for Yii2 with Font Awesome",
+        "keywords": [
+            "asset",
+            "awesome",
+            "bundle",
+            "font",
+            "yii"
+        ]
+    },
+    {
+        "name": "almasaeed2010/adminlte",
+        "version": "v2.3.2",
+        "version_normalized": "2.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/almasaeed2010/AdminLTE.git",
+            "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
+            "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
+            "shasum": ""
+        },
+        "time": "2015-10-23 14:50:49",
         "type": "library",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -890,18 +1093,120 @@
         ]
     },
     {
-        "name": "hightman/xunsearch",
-        "version": "1.4.10-beta2",
-        "version_normalized": "1.4.10.0-beta2",
+        "name": "dmstr/yii2-adminlte-asset",
+        "version": "2.2.4",
+        "version_normalized": "2.2.4.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/hightman/xs-sdk-php.git",
-            "reference": "7d1aa986d69e9129205e14256a2e85e08d105c8e"
+            "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
+            "reference": "c842a15ceef4e903f70ac927ec3246e6d53e1148"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/hightman/xs-sdk-php/zipball/7d1aa986d69e9129205e14256a2e85e08d105c8e",
-            "reference": "7d1aa986d69e9129205e14256a2e85e08d105c8e",
+            "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c842a15ceef4e903f70ac927ec3246e6d53e1148",
+            "reference": "c842a15ceef4e903f70ac927ec3246e6d53e1148",
+            "shasum": ""
+        },
+        "require": {
+            "almasaeed2010/adminlte": "~2.0",
+            "cebe/yii2-gravatar": "1.*",
+            "rmrevin/yii2-fontawesome": "~2.9",
+            "yiisoft/yii2": "2.*",
+            "yiisoft/yii2-bootstrap": "2.*"
+        },
+        "time": "2015-11-06 10:35:36",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dmstr\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Tobias Munk",
+                "email": "tobias@diemeisterei.de"
+            },
+            {
+                "name": "Evgeniy Tkachenko",
+                "email": "et.coder@gmail.com"
+            }
+        ],
+        "description": "Backend theme for Yii2 Framework",
+        "keywords": [
+            "AdminLTE",
+            "extension",
+            "yii2"
+        ]
+    },
+    {
+        "name": "kartik-v/yii2-grid",
+        "version": "v3.0.8",
+        "version_normalized": "3.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/yii2-grid.git",
+            "reference": "db02213255a0dfccd6b6746e795a177c526ba55f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/db02213255a0dfccd6b6746e795a177c526ba55f",
+            "reference": "db02213255a0dfccd6b6746e795a177c526ba55f",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-krajee-base": "~1.7"
+        },
+        "time": "2015-12-05 19:28:33",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\grid\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "Yii 2 GridView on steroids. Various enhancements and utilities for the Yii 2.0 GridView widget.",
+        "homepage": "https://github.com/kartik-v/yii2-grid",
+        "keywords": [
+            "extension",
+            "grid",
+            "widget",
+            "yii2"
+        ]
+    },
+    {
+        "name": "hightman/xunsearch",
+        "version": "1.4.10-beta3",
+        "version_normalized": "1.4.10.0-beta3",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hightman/xs-sdk-php.git",
+            "reference": "9d1b9980d8f0d20571df056d644dd7287c6ffa36"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hightman/xs-sdk-php/zipball/9d1b9980d8f0d20571df056d644dd7287c6ffa36",
+            "reference": "9d1b9980d8f0d20571df056d644dd7287c6ffa36",
             "shasum": ""
         },
         "require": {
@@ -909,7 +1214,7 @@
             "lib-pcre": "*",
             "php": ">=5.3.0"
         },
-        "time": "2015-04-08 07:19:46",
+        "time": "2015-08-05 07:43:01",
         "bin": [
             "util/xs"
         ],
@@ -948,6 +1253,44 @@
             "yii",
             "yii2"
         ]
+    },
+    {
+        "name": "xj/yii2-sitemap",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/xjflyttp/yii2-sitemap.git",
+            "reference": "bf4bb22005e885647f626e8308baf2f93459109e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/xjflyttp/yii2-sitemap/zipball/bf4bb22005e885647f626e8308baf2f93459109e",
+            "reference": "bf4bb22005e885647f626e8308baf2f93459109e",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2015-11-18 08:21:24",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "xj\\sitemap\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "xjflyttp",
+                "email": "xjflyttp@gmail.com"
+            }
+        ],
+        "description": "yii2-sitemap"
     },
     {
         "name": "yiisoft/yii2-codeception",
@@ -998,24 +1341,24 @@
     },
     {
         "name": "yiisoft/yii2-debug",
-        "version": "2.0.4",
-        "version_normalized": "2.0.4.0",
+        "version": "2.0.5",
+        "version_normalized": "2.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "5c7081b2be71c61d3a50d978b31edc3e0b6f2f97"
+            "reference": "1b302e67521d46feb2413d9d96ca94ed82b39b0e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/5c7081b2be71c61d3a50d978b31edc3e0b6f2f97",
-            "reference": "5c7081b2be71c61d3a50d978b31edc3e0b6f2f97",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/1b302e67521d46feb2413d9d96ca94ed82b39b0e",
+            "reference": "1b302e67521d46feb2413d9d96ca94ed82b39b0e",
             "shasum": ""
         },
         "require": {
             "yiisoft/yii2": ">=2.0.4",
             "yiisoft/yii2-bootstrap": "*"
         },
-        "time": "2015-05-10 22:08:56",
+        "time": "2015-08-06 16:14:06",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1265,349 +1608,6 @@
         "keywords": [
             "Fixture",
             "faker",
-            "yii2"
-        ]
-    },
-    {
-        "name": "bower-asset/bootstrap",
-        "version": "v3.3.5",
-        "version_normalized": "3.3.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/twbs/bootstrap.git",
-            "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
-            "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/jquery": ">=1.9.1"
-        },
-        "type": "bower-asset-library",
-        "extra": {
-            "bower-asset-main": [
-                "less/bootstrap.less",
-                "dist/js/bootstrap.js"
-            ],
-            "bower-asset-ignore": [
-                "/.*",
-                "_config.yml",
-                "CNAME",
-                "composer.json",
-                "CONTRIBUTING.md",
-                "docs",
-                "js/tests",
-                "test-infra"
-            ]
-        },
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-        "keywords": [
-            "css",
-            "framework",
-            "front-end",
-            "js",
-            "less",
-            "mobile-first",
-            "responsive",
-            "web"
-        ]
-    },
-    {
-        "name": "kartik-v/yii2-krajee-base",
-        "version": "v1.7.7",
-        "version_normalized": "1.7.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-            "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
-            "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2-bootstrap": "@dev"
-        },
-        "time": "2015-06-16 05:19:57",
-        "type": "yii2-extension",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "kartik\\base\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Base library and foundation components for all Yii2 Krajee extensions.",
-        "homepage": "https://github.com/kartik-v/yii2-krajee-base",
-        "keywords": [
-            "base",
-            "extension",
-            "foundation",
-            "krajee",
-            "widget",
-            "yii2"
-        ]
-    },
-    {
-        "name": "xj/yii2-sitemap",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/xjflyttp/yii2-sitemap.git",
-            "reference": "aa3c5f9f0d95f008ae41808221acc50ed3ac9608"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/xjflyttp/yii2-sitemap/zipball/aa3c5f9f0d95f008ae41808221acc50ed3ac9608",
-            "reference": "aa3c5f9f0d95f008ae41808221acc50ed3ac9608",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "*"
-        },
-        "time": "2015-04-30 04:42:37",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "xj\\sitemap\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "xjflyttp",
-                "email": "xjflyttp@gmail.com"
-            }
-        ],
-        "description": "yii2-sitemap"
-    },
-    {
-        "name": "kartik-v/yii2-widget-select2",
-        "version": "v2.0.2",
-        "version_normalized": "2.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-            "reference": "585e8797d7982e0c9d09370b98b451a028a59439"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/585e8797d7982e0c9d09370b98b451a028a59439",
-            "reference": "585e8797d7982e0c9d09370b98b451a028a59439",
-            "shasum": ""
-        },
-        "require": {
-            "kartik-v/yii2-krajee-base": "~1.7"
-        },
-        "time": "2015-07-01 15:20:59",
-        "type": "yii2-extension",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "kartik\\select2\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Enhanced Yii2 wrapper for the Select2 jQuery plugin (sub repo split from yii2-widgets).",
-        "homepage": "https://github.com/kartik-v/yii2-widget-select2",
-        "keywords": [
-            "dropdown",
-            "extension",
-            "form",
-            "jquery",
-            "plugin",
-            "select2",
-            "widget",
-            "yii2"
-        ]
-    },
-    {
-        "name": "rmrevin/yii2-fontawesome",
-        "version": "2.11.0",
-        "version_normalized": "2.11.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-            "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
-            "reference": "8786dbfe1edfc0b25aed9e25461ec4e4e37a1d15",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/fontawesome": "4.3.*",
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "2.0.*"
-        },
-        "time": "2015-06-29 09:47:23",
-        "type": "yii2-extension",
-        "extra": {
-            "asset-installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "rmrevin\\yii\\fontawesome\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Roman Revin",
-                "email": "xgismox@gmail.com",
-                "homepage": "http://rmrevin.ru/"
-            }
-        ],
-        "description": "Asset Bundle for Yii2 with Font Awesome",
-        "keywords": [
-            "asset",
-            "awesome",
-            "bundle",
-            "font",
-            "yii"
-        ]
-    },
-    {
-        "name": "dmstr/yii2-adminlte-asset",
-        "version": "2.1.3",
-        "version_normalized": "2.1.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dmstr/yii2-adminlte-asset.git",
-            "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/dmstr/yii2-adminlte-asset/zipball/c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
-            "reference": "c5d2ea94209a2b087348ea9ee8fda11eedf943b6",
-            "shasum": ""
-        },
-        "require": {
-            "almasaeed2010/adminlte": "~2.0",
-            "cebe/yii2-gravatar": "1.*",
-            "rmrevin/yii2-fontawesome": "~2.9",
-            "yiisoft/yii2": "2.*",
-            "yiisoft/yii2-bootstrap": "2.*"
-        },
-        "time": "2015-06-25 01:41:38",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "dmstr\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Tobias Munk",
-                "email": "tobias@diemeisterei.de"
-            },
-            {
-                "name": "Evgeniy Tkachenko",
-                "email": "et.coder@gmail.com"
-            }
-        ],
-        "description": "Backend theme for Yii2 Framework",
-        "keywords": [
-            "AdminLTE",
-            "extension",
-            "yii2"
-        ]
-    },
-    {
-        "name": "kartik-v/yii2-grid",
-        "version": "v3.0.4",
-        "version_normalized": "3.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/yii2-grid.git",
-            "reference": "8d596b9e5458291786677618b7fe9d5b84de4aa5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/8d596b9e5458291786677618b7fe9d5b84de4aa5",
-            "reference": "8d596b9e5458291786677618b7fe9d5b84de4aa5",
-            "shasum": ""
-        },
-        "require": {
-            "kartik-v/yii2-krajee-base": "~1.7"
-        },
-        "time": "2015-06-24 05:23:50",
-        "type": "yii2-extension",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "kartik\\grid\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "Yii 2 GridView on steroids. Various enhancements and utilities for the Yii 2.0 GridView widget.",
-        "homepage": "https://github.com/kartik-v/yii2-grid",
-        "keywords": [
-            "extension",
-            "grid",
-            "widget",
             "yii2"
         ]
     }

@@ -14,7 +14,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'aliases' => [
         '@views' => dirname(__DIR__) . "/views/",
-        '@jsUrl' => Yii::$app->request->baseUrl."/js/"
+        '@jsUrl' => '',//Yii::$app->request->baseUrl."/js/"
     ],
     'components' => [
         'user' => [

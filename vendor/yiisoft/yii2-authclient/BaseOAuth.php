@@ -394,7 +394,7 @@ abstract class BaseOAuth extends BaseClient implements ClientInterface
     /**
      * Saves token as persistent state.
      * @param OAuthToken $token auth token
-     * @return static self reference.
+     * @return $this the object itself.
      */
     protected function saveAccessToken(OAuthToken $token)
     {
@@ -421,11 +421,15 @@ abstract class BaseOAuth extends BaseClient implements ClientInterface
      * Sets persistent state.
      * @param string $key state key.
      * @param mixed $value state value
-     * @return static self reference.
+     * @return $this the object itself
      */
     protected function setState($key, $value)
     {
-        $session = Yii::$app->getSession();
+        if (!Yii::$app->has('session')) {
+            return $this;
+        }
+        /* @var \yii\web\Session $session */
+        $session = Yii::$app->get('session');
         $key = $this->getStateKeyPrefix() . $key;
         $session->set($key, $value);
         return $this;
@@ -438,7 +442,11 @@ abstract class BaseOAuth extends BaseClient implements ClientInterface
      */
     protected function getState($key)
     {
-        $session = Yii::$app->getSession();
+        if (!Yii::$app->has('session')) {
+            return null;
+        }
+        /* @var \yii\web\Session $session */
+        $session = Yii::$app->get('session');
         $key = $this->getStateKeyPrefix() . $key;
         $value = $session->get($key);
         return $value;
@@ -451,7 +459,11 @@ abstract class BaseOAuth extends BaseClient implements ClientInterface
      */
     protected function removeState($key)
     {
-        $session = Yii::$app->getSession();
+        if (!Yii::$app->has('session')) {
+            return true;
+        }
+        /* @var \yii\web\Session $session */
+        $session = Yii::$app->get('session');
         $key = $this->getStateKeyPrefix() . $key;
         $session->remove($key);
         return true;

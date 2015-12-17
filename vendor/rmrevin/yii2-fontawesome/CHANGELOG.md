@@ -1,3 +1,22 @@
+2015-11-26 - 2.13.0
+-------------------
+* `Font Awesome` updated to version `4.5`.
+
+2015-11-20 - 2.12.2
+-------------------
+* Add shortcuts methods `i()` for `FA::icon()` and `FA::s()` for `FA::stack()`
+* Update readme
+
+2015-11-09 - 2.12.1
+-------------------
+* Variable `FA::$cssPrefix` transferred to the class `FontAwesome`.
+* Refactoring.
+* Update tests.
+
+2015-08-15 - 2.12.0
+-------------------
+* `Font Awesome` updated to version `4.4`.
+
 2015-06-29 - 2.11.0
 -------------------
 * Added the ability to change the tag for icons.
@@ -59,7 +78,7 @@
 
 2015-01-26 - 2.7.0
 ------------------
-* Font Awesome updated to version 4.3.
+* `Font Awesome` updated to version `4.3`.
 * Update icons constants list.
 * Update readme.
 
